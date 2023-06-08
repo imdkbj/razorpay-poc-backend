@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "razorpay_poc-executor",
+    "name": "razorpay_poc",
+    "region": "ap-south-1"
+  },
+  "api": {
+    "id": "15gun909j9"
+  }
+}

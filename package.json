@@ -1,0 +1,30 @@
+{
+  "name": "razorpay-poc-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy:dev": "claudia create --profile testUser --config dev.json --version dev --name razorpay_poc --description razorpay_poc_backend --handler lambda.handler --deploy-proxy-api --region ap-south-1 --runtime nodejs16.x --allow-recursion --memory 1024 --timeout 10",
+    "update:dev": "claudia update --profile testUser --config dev.json --version dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vendia/serverless-express": "^4.10.4",
+    "cors": "^2.8.5",
+    "custom-env": "^2.0.2",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "nanoid": "3",
+    "pg": "^8.11.0",
+    "razorpay": "^2.8.6",
+    "sequelize": "^6.32.0",
+    "sequelize-cockroachdb": "^6.0.5",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "claudia": "^5.14.1"
+  }
+}
